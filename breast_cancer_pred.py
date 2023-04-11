@@ -12,8 +12,8 @@ from PIL import Image
 st.set_page_config(page_title='BTCS_G01', page_icon="https://cdn-icons-png.flaticon.com/128/5017/5017903.png",layout="wide")
 
 #loading the logistic regression model
-whole = pickle.load(open("C:/Users/dhara/Desktop/Breast Cancer Project_G01/model_lr.sav",'rb'))
-worst = pickle.load(open("C:/Users/dhara/Desktop/Breast Cancer Project_G01/mrf.sav",'rb'))
+whole = pickle.load(open("model_lr.sav",'rb'))
+worst = pickle.load(open("mrf.sav",'rb'))
 
 with st.sidebar:
     selected = option_menu('Breast Cancer Prediction Models',
@@ -29,7 +29,7 @@ if(selected=="Home"):
     st.divider()
     col1,col2= st.columns(2)
     with col1:
-        image = Image.open(r'C:\Users\dhara\Desktop\Breast Cancer Project_G01\research_papers\logo.png')
+        image = Image.open('logo.png')
         st.image(image, width=350)
     with col2:
         st.write('Hello, *World!* :sunglasses:  \n\n This is our ML project-Breast Cancer Classification.  \n\nAfter much research we have a Logistic regression model which uses all the attributes of the Wisconsin dataset and we have a Random Forest model that only utilizes the worst attributes which came out to be predicting as good as the model that uses all the attributes according to our study.  \n\nThis deployment is to check our results and do further resesarch on the topic.	:purple_heart:')
