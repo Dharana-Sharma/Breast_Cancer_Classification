@@ -30,7 +30,7 @@ if(selected=="Home"):
     col1,col2= st.columns((1,2))
     with col1:
         image = Image.open('logo.png')
-        st.image(image, width=350)
+        st.image(image, width=300)
     with col2:
         st.write('Hello, *World!* And welcome to our project!  \n\n We are thrilled to have you here and we appreciate your interest in our project.  \n\nThis is the deployment of our Machine Learning Project - Breast Cancer Classification. \n\nAfter much research we have a Logistic regression model which uses all the attributes of the Wisconsin dataset and we have a Random Forest model that only utilizes the worst attributes which came out to be predicting as good as the model that uses all the attributes according to our study. We understand that your time is valuable, which is why we have made every effort to streamline the app\'s/website\'s features and functions, so that you can access the information you need quickly and efficiently.  \n\nThis deployment is to test our results and do further research on the topic.')
     
