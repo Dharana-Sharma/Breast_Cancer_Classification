@@ -1,5 +1,5 @@
 
-# Breast Cancer Classification
+[# Breast Cancer Classification](https://btcs-g01.streamlit.app/)
 
 ## Introduction
 
@@ -104,11 +104,11 @@ The preparation of data is a critical aspect of any data analysis task, as it en
 One of the challenges encountered was that the "class" attribute values were expressed as strings, hence the need to convert them to integers in order to serve as our target class. We were able to achieve this by utilizing the LabelEncoder function provided by the sklearn library.
 
 ## Results & Discussion
-Different machine learning techniques for the detection of breast cancer were proposed. Results obtained with the Logistic Regression model with all features included showed the highest classification accuracy (98.24%).
+After much research and analysing previous research papers as well , we found that for our proposed study:
+-Logistic Regression Model gave the best result – an accuracy of 98.24% on the whole dataset i.e. considering all the 30 attributes.
+-Random Forest Model gave the best result – an accuracy of 97.36% on consideration of the worst valued attributes i.e. considering only 10 attributes.
 
-Here are some reasons why logistic regression may give accurate results:
-- Linear Decision Boundary 
-- Efficient for large datasets
+Further , we have also deployed our [Breast Cancer Classification](https://btcs-g01.streamlit.app/) Project to check the malignancy of the tumour and predict whether the tumour is cancerous or not.
 
 
 
