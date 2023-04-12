@@ -1,5 +1,6 @@
 
-# Breast Cancer Classification(https://btcs-g01.streamlit.app/)
+# Breast Cancer Classification
+[View our project](https://btcs-g01.streamlit.app/)
 
 ## Introduction
 
